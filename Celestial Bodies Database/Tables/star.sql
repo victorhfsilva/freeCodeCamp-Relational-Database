@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS star (
 	is_spherical BOOLEAN NOT NULL DEFAULT TRUE,
 	age_myr INT,
 	temperature_k INT,
-	apparent_magnitude NUMERIC(3,2),
+	apparent_magnitude NUMERIC(4,2),
 	active BOOLEAN NOT NULL DEFAULT TRUE,
 	insertion_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	FOREIGN KEY (galaxy_id) REFERENCES galaxy(galaxy_id)
